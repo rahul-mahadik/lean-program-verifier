@@ -1,0 +1,55 @@
+'MiniVerify.vcgen_sound' depends on axioms: [propext, Quot.sound]
+'MiniVerify.totalCorrect_of_vcs' depends on axioms: [propext, Quot.sound]
+'MiniVerify.Exec.deterministic' depends on axioms: [propext]
+'MiniVerify.Exec.run_result' depends on axioms: [propext]
+'MiniVerify.Exec.run_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MiniVerify.run_sound' depends on axioms: [propext]
+'MiniVerify.verified_execution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MiniVerify.Language.verified_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MiniVerify.Language.absoluteValue_verified' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MiniVerify.Examples.BinarySearch.verification_conditions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MiniVerify.Examples.BinarySearch.sortedCheck_correct' depends on axioms: [propext, Quot.sound]
+'MiniVerify.Examples.BinarySearch.executable_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MiniVerify.Examples.Reverse.verification_conditions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MiniVerify.Examples.Reverse.executable_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MiniVerify.Examples.InsertionSort.vcs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MiniVerify.Examples.InsertionSort.executable_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+@MiniVerify.vcgen_sound : ∀ {σ : Type u_1} (c : MiniVerify.Cmd σ) (post : MiniVerify.Assertion σ) (s : σ),
+  MiniVerify.vcgen c post s → ∃ t, MiniVerify.Exec c s t ∧ post t
+@MiniVerify.verified_execution : ∀ {σ : Type u_1} (c : MiniVerify.Cmd σ) (post : MiniVerify.Assertion σ) (s : σ),
+  MiniVerify.vcgen c post s →
+    (∃ t bound, post t ∧ ∀ (fuel : ℕ), bound ≤ fuel → MiniVerify.run fuel c s = MiniVerify.Outcome.done t) ∧
+      ∀ (fuel : ℕ), MiniVerify.run fuel c s ≠ MiniVerify.Outcome.fault
+MiniVerify.Examples.BinarySearch.executable_correct : ∀ (a : Array ℤ) (target : ℤ),
+  MiniVerify.Examples.BinarySearch.Sorted a →
+    (∃ t bound,
+        MiniVerify.Examples.BinarySearch.Correct a target t ∧
+          ∀ (fuel : ℕ),
+            bound ≤ fuel →
+              MiniVerify.run fuel (MiniVerify.Examples.BinarySearch.program a target)
+                  (MiniVerify.Examples.BinarySearch.initial a target) =
+                MiniVerify.Outcome.done t) ∧
+      ∀ (fuel : ℕ),
+        MiniVerify.run fuel (MiniVerify.Examples.BinarySearch.program a target)
+            (MiniVerify.Examples.BinarySearch.initial a target) ≠
+          MiniVerify.Outcome.fault
+MiniVerify.Examples.Reverse.executable_correct : ∀ (a : Array ℤ),
+  (∃ t bound,
+      (t.data.toList = a.toList.reverse ∧ t.data.size = a.size) ∧
+        ∀ (fuel : ℕ),
+          bound ≤ fuel →
+            MiniVerify.run fuel (MiniVerify.Examples.Reverse.program a) { data := a, index := 0 } =
+              MiniVerify.Outcome.done t) ∧
+    ∀ (fuel : ℕ),
+      MiniVerify.run fuel (MiniVerify.Examples.Reverse.program a) { data := a, index := 0 } ≠ MiniVerify.Outcome.fault
+MiniVerify.Examples.InsertionSort.executable_correct : ∀ (a : Array ℤ),
+  (∃ t bound,
+      MiniVerify.Examples.InsertionSort.Post a t ∧
+        ∀ (fuel : ℕ),
+          bound ≤ fuel →
+            MiniVerify.run fuel (MiniVerify.Examples.InsertionSort.program a)
+                (MiniVerify.Examples.InsertionSort.initial a) =
+              MiniVerify.Outcome.done t) ∧
+    ∀ (fuel : ℕ),
+      MiniVerify.run fuel (MiniVerify.Examples.InsertionSort.program a) (MiniVerify.Examples.InsertionSort.initial a) ≠
+        MiniVerify.Outcome.fault

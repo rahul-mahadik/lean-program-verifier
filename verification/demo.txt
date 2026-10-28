@@ -1,0 +1,6 @@
+MiniVerify: executable programs with proved total correctness
+reverse: #[5, 4, 3, 2, 1]
+insertion sort: #[-1, 2, 2, 4, 5]
+search 4: some 3
+search 3: none
+surface-language abs(-7): 7

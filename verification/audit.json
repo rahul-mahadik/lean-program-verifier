@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "lean_toolchain": "leanprover/lean4:v4.14.0",
+  "source_files_scanned": 11,
+  "exact_regressions": 25,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "theorems": {
+    "MiniVerify.vcgen_sound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MiniVerify.totalCorrect_of_vcs": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MiniVerify.Exec.deterministic": [
+      "propext"
+    ],
+    "MiniVerify.Exec.run_result": [
+      "propext"
+    ],
+    "MiniVerify.Exec.run_complete": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MiniVerify.run_sound": [
+      "propext"
+    ],
+    "MiniVerify.verified_execution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MiniVerify.Language.verified_program": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MiniVerify.Language.absoluteValue_verified": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MiniVerify.Examples.BinarySearch.verification_conditions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MiniVerify.Examples.BinarySearch.sortedCheck_correct": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MiniVerify.Examples.BinarySearch.executable_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MiniVerify.Examples.Reverse.verification_conditions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MiniVerify.Examples.Reverse.executable_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MiniVerify.Examples.InsertionSort.vcs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MiniVerify.Examples.InsertionSort.executable_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source_sha256": {
+    "MiniVerify/Audit.lean": "8756d3bb160620e78d44a5d409dab4adb6e46e1039110ddd5cc56b6ef92e8d40",
+    "MiniVerify/Core.lean": "90813b64e0f7507aa2e69a7c29a3d9fa75a84e1805823dfc7198273d641e1995",
+    "MiniVerify/Examples/BinarySearch.lean": "d832ee977c4a59113d80e6deaefe1c089e2763f6cef28fe5f1fbe9ce586da5e3",
+    "MiniVerify/Examples/InsertionSort.lean": "0b1a430ddbf6b392f9dedb50d5676ee20ddc41f3b6a1ba107f555f04b1678f51",
+    "MiniVerify/Examples/Reverse.lean": "20b3793dd7a3167223a58712f4473c7bd1a0ac7c5a4c5102544abe53e024d837",
+    "MiniVerify/Interpreter.lean": "7d06b362091989a5a4d15de66279f510cedf09e65bc4d61e8ad054b01286bbbf",
+    "MiniVerify/Language.lean": "9584c9d8fb0a7210efa986fa89f0a9591a17a7f7c6c0a7499a380f96346ac632",
+    "MiniVerify/Tests.lean": "1d4d75df8567850a169085c95fea2b3982e98f74a72de4272df4fd41de7f6d77",
+    "MiniVerify.lean": "5a9fe36c7516893f69e3e6f4de1fecc53eb1619e8a87a9352a73cb452e7f3fc6",
+    "Main.lean": "653deb0dede96a9e43433ae80ecc775a061668718b7271486813993de1121780",
+    "lakefile.lean": "e694612b2ad3a1ec1dc4428ca3e89bd3cc2246f2d0428e205c32e7fe56d61df4"
+  },
+  "problems": []
+}
