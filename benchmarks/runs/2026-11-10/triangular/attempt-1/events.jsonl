@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a1c813-a602-7592-90b7-06f796ab4190"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"invariant\":\"s.x <= n and 2 * s.y == s.x * (s.x + 1)\",\"variant\":\"n - s.x\",\"solver\":\"nonlinear\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":9888,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":79,"reasoning_output_tokens":29}}

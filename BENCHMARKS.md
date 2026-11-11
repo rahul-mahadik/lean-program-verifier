@@ -11,6 +11,30 @@ postconditions are fixed in [Benchmarks.lean](MiniVerify/Benchmarks.lean).
 Inputs `n` and `m` are arbitrary natural numbers; these are universal
 proofs, not execution tests on a finite set of inputs.
 
+## Recorded run
+
+On November 10, 2026 (America/Los_Angeles), the requested model
+`gpt-6.1-sol`, with medium reasoning effort, verified 12/12 programs on
+the first attempt. The fixed budget allowed two attempts per program;
+all twelve succeeded without repairs. The observed first-attempt and
+within-budget rates were both 100% on this suite.
+
+The run used Codex CLI `0.162.0-alpha.17.2`, a 180-second generation
+timeout and a 45-second Lean timeout per attempt. The source is revision
+[`0b9e447`](https://github.com/rahul-mahadik/lean-program-verifier/commit/0b9e447).
+Every attempt recorded zero tool items. No reference annotations were
+supplied to the model and no candidate was manually edited.
+
+- [Report and source fingerprints](benchmarks/runs/2026-11-10/report.json)
+- [Prompts, responses, event streams, Lean sources, and diagnostics](benchmarks/runs/2026-11-10/)
+- [Separate hand-written positive-control summary](benchmarks/controls/2026-11-10.json)
+- [Successful replay of all twelve saved annotations, with zero model calls](verification/llm-replay.json)
+
+The positive control also passed 12/12; those results are not included in
+the model success count. The CLI exposes the requested model identifier,
+not an immutable backend snapshot. These are observed small-suite results,
+not a general invariant-synthesis accuracy estimate.
+
 ## Protocol
 
 Each first attempt starts a fresh Codex CLI process with an empty working

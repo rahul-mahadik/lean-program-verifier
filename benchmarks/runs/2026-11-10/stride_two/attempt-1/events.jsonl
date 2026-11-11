@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a1c811-f852-7ea1-a743-eb8cb8c16cfc"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"invariant\":\"s.x < n + 2 and s.n == n\",\"variant\":\"n - s.x\",\"solver\":\"omega\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":9862,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":119,"reasoning_output_tokens":79}}

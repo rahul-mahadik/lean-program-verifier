@@ -1,0 +1,225 @@
+{
+  "annotation_source": "benchmarks/reference.json",
+  "cases": [
+    {
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "id": "count_up",
+      "verified": true
+    },
+    {
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "count_down",
+      "verified": true
+    },
+    {
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "transfer",
+      "verified": true
+    },
+    {
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "double_count",
+      "verified": true
+    },
+    {
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "stride_two",
+      "verified": true
+    },
+    {
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "parity_down",
+      "verified": true
+    },
+    {
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "synchronized",
+      "verified": true
+    },
+    {
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "bounded_copy",
+      "verified": true
+    },
+    {
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "two_phase",
+      "verified": true
+    },
+    {
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "multiply",
+      "verified": true
+    },
+    {
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "triangular",
+      "verified": true
+    },
+    {
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "square",
+      "verified": true
+    }
+  ],
+  "kind": "reference_control",
+  "source_sha256": {
+    "MiniVerify.lean": "5a9fe36c7516893f69e3e6f4de1fecc53eb1619e8a87a9352a73cb452e7f3fc6",
+    "MiniVerify/Audit.lean": "90798f9fa6311168f339d741e0f915c1741135055eced7fb1496d3044c9f1021",
+    "MiniVerify/Benchmarks.lean": "a8bf8be0962b81523dd9909596b5d0ce65a04d6e53e0021feccbfa73a7a84184",
+    "MiniVerify/Core.lean": "90813b64e0f7507aa2e69a7c29a3d9fa75a84e1805823dfc7198273d641e1995",
+    "MiniVerify/Examples/BinarySearch.lean": "d832ee977c4a59113d80e6deaefe1c089e2763f6cef28fe5f1fbe9ce586da5e3",
+    "MiniVerify/Examples/InsertionSort.lean": "0b1a430ddbf6b392f9dedb50d5676ee20ddc41f3b6a1ba107f555f04b1678f51",
+    "MiniVerify/Examples/Reverse.lean": "20b3793dd7a3167223a58712f4473c7bd1a0ac7c5a4c5102544abe53e024d837",
+    "MiniVerify/Interpreter.lean": "7d06b362091989a5a4d15de66279f510cedf09e65bc4d61e8ad054b01286bbbf",
+    "MiniVerify/Language.lean": "9584c9d8fb0a7210efa986fa89f0a9591a17a7f7c6c0a7499a380f96346ac632",
+    "MiniVerify/Tests.lean": "1d4d75df8567850a169085c95fea2b3982e98f74a72de4272df4fd41de7f6d77",
+    "benchmarks/cases.json": "7ebb8b4eabc7d44b72b41f04615911d623ba1e959fbaf51e5c587e50d252c04c",
+    "benchmarks/reference.json": "b585455aa20b05110389ef03a9115a03ed34681a15455c63067f3e49e0ab84f7",
+    "lake-manifest.json": "5d2b56e7081e71be44068fa4c1d7dfe379bc16770c867f1df8fb623f69768f60",
+    "lakefile.lean": "e694612b2ad3a1ec1dc4428ca3e89bd3cc2246f2d0428e205c32e7fe56d61df4",
+    "lean-toolchain": "6faf6530819a0bc6d6092a2d9b974ea8e8adfec955d0e51e02e1f82734264d14",
+    "scripts/llm_benchmark.py": "0f177bf04ce439425ef15b3bf3611d8a0732119dae42df2ec3af1ce91e7734f2",
+    "scripts/llm_check.py": "690f611e9b8adf98b5e76e4fb78fbfabf63a4c80d7d67d8b36fba90ceef2de0a",
+    "scripts/llm_provider.py": "ec3fd605fb3483c612b1afe17487e9a939fb2b559c893c6b4be9481700983fb3"
+  },
+  "summary": {
+    "attempts": 12,
+    "model_claim_eligible": false,
+    "programs": 12,
+    "success_rate": 1.0,
+    "verified_first_attempt": 12,
+    "verified_within_budget": 12
+  }
+}

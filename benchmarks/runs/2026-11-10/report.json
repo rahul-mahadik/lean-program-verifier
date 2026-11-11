@@ -1,0 +1,466 @@
+{
+  "cases": [
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "axioms": {
+            "MiniVerify.Generated.candidate_correct": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "MiniVerify.Generated.candidate_vcs": [
+              "propext",
+              "Quot.sound"
+            ]
+          },
+          "duration_seconds": 10.17797900014557,
+          "error": null,
+          "exit_code": 0,
+          "log_path": "benchmarks/runs/2026-11-10/count_up/attempt-1/lean.log",
+          "required_theorems": [
+            "MiniVerify.Generated.candidate_vcs",
+            "MiniVerify.Generated.candidate_correct"
+          ],
+          "source_path": "benchmarks/runs/2026-11-10/count_up/attempt-1/candidate.lean",
+          "source_sha256": "3c248a43bb17bf34edf707227f6eb1c48eec5971caf3957ab50b8bc1fde1ae68",
+          "status": "accepted",
+          "success": true,
+          "timed_out": false,
+          "verified": true
+        }
+      ],
+      "id": "count_up"
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "axioms": {
+            "MiniVerify.Generated.candidate_correct": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "MiniVerify.Generated.candidate_vcs": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          "duration_seconds": 20.07424712483771,
+          "error": null,
+          "exit_code": 0,
+          "log_path": "benchmarks/runs/2026-11-10/count_down/attempt-1/lean.log",
+          "required_theorems": [
+            "MiniVerify.Generated.candidate_vcs",
+            "MiniVerify.Generated.candidate_correct"
+          ],
+          "source_path": "benchmarks/runs/2026-11-10/count_down/attempt-1/candidate.lean",
+          "source_sha256": "2e89f17093b4be8a423ef93bd4285c3b6ebc0bdcde8df752dd7c123252fa03c8",
+          "status": "accepted",
+          "success": true,
+          "timed_out": false,
+          "verified": true
+        }
+      ],
+      "id": "count_down"
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "axioms": {
+            "MiniVerify.Generated.candidate_correct": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "MiniVerify.Generated.candidate_vcs": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          "duration_seconds": 13.544225999852642,
+          "error": null,
+          "exit_code": 0,
+          "log_path": "benchmarks/runs/2026-11-10/transfer/attempt-1/lean.log",
+          "required_theorems": [
+            "MiniVerify.Generated.candidate_vcs",
+            "MiniVerify.Generated.candidate_correct"
+          ],
+          "source_path": "benchmarks/runs/2026-11-10/transfer/attempt-1/candidate.lean",
+          "source_sha256": "ca23e7626b88563a604f648fa25009b0c8b6b8281dcd54ae3027c0389011fe33",
+          "status": "accepted",
+          "success": true,
+          "timed_out": false,
+          "verified": true
+        }
+      ],
+      "id": "transfer"
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "axioms": {
+            "MiniVerify.Generated.candidate_correct": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "MiniVerify.Generated.candidate_vcs": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          "duration_seconds": 15.584110375028104,
+          "error": null,
+          "exit_code": 0,
+          "log_path": "benchmarks/runs/2026-11-10/double_count/attempt-1/lean.log",
+          "required_theorems": [
+            "MiniVerify.Generated.candidate_vcs",
+            "MiniVerify.Generated.candidate_correct"
+          ],
+          "source_path": "benchmarks/runs/2026-11-10/double_count/attempt-1/candidate.lean",
+          "source_sha256": "36eb1d2a79d7b4528b526ccfd84d0b8e621c322ead2db0c597775b1c2abba505",
+          "status": "accepted",
+          "success": true,
+          "timed_out": false,
+          "verified": true
+        }
+      ],
+      "id": "double_count"
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "axioms": {
+            "MiniVerify.Generated.candidate_correct": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "MiniVerify.Generated.candidate_vcs": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          "duration_seconds": 10.162065792130306,
+          "error": null,
+          "exit_code": 0,
+          "log_path": "benchmarks/runs/2026-11-10/stride_two/attempt-1/lean.log",
+          "required_theorems": [
+            "MiniVerify.Generated.candidate_vcs",
+            "MiniVerify.Generated.candidate_correct"
+          ],
+          "source_path": "benchmarks/runs/2026-11-10/stride_two/attempt-1/candidate.lean",
+          "source_sha256": "f406519a17363e963f7b5cd3459064c0ea7824ad306c255bb09d8fe704d88ae3",
+          "status": "accepted",
+          "success": true,
+          "timed_out": false,
+          "verified": true
+        }
+      ],
+      "id": "stride_two"
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "axioms": {
+            "MiniVerify.Generated.candidate_correct": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "MiniVerify.Generated.candidate_vcs": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          "duration_seconds": 18.412895624991506,
+          "error": null,
+          "exit_code": 0,
+          "log_path": "benchmarks/runs/2026-11-10/parity_down/attempt-1/lean.log",
+          "required_theorems": [
+            "MiniVerify.Generated.candidate_vcs",
+            "MiniVerify.Generated.candidate_correct"
+          ],
+          "source_path": "benchmarks/runs/2026-11-10/parity_down/attempt-1/candidate.lean",
+          "source_sha256": "85486f52359054297eb4268bc28ddd6176b08ca0767f8783838fdaea95e3b05c",
+          "status": "accepted",
+          "success": true,
+          "timed_out": false,
+          "verified": true
+        }
+      ],
+      "id": "parity_down"
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "axioms": {
+            "MiniVerify.Generated.candidate_correct": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "MiniVerify.Generated.candidate_vcs": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          "duration_seconds": 12.50288754189387,
+          "error": null,
+          "exit_code": 0,
+          "log_path": "benchmarks/runs/2026-11-10/synchronized/attempt-1/lean.log",
+          "required_theorems": [
+            "MiniVerify.Generated.candidate_vcs",
+            "MiniVerify.Generated.candidate_correct"
+          ],
+          "source_path": "benchmarks/runs/2026-11-10/synchronized/attempt-1/candidate.lean",
+          "source_sha256": "7129c2b68f7bc95093cf2201d31a4dae9026a7926076695294673b84a31c6eb3",
+          "status": "accepted",
+          "success": true,
+          "timed_out": false,
+          "verified": true
+        }
+      ],
+      "id": "synchronized"
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "axioms": {
+            "MiniVerify.Generated.candidate_correct": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "MiniVerify.Generated.candidate_vcs": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          "duration_seconds": 9.98854241706431,
+          "error": null,
+          "exit_code": 0,
+          "log_path": "benchmarks/runs/2026-11-10/bounded_copy/attempt-1/lean.log",
+          "required_theorems": [
+            "MiniVerify.Generated.candidate_vcs",
+            "MiniVerify.Generated.candidate_correct"
+          ],
+          "source_path": "benchmarks/runs/2026-11-10/bounded_copy/attempt-1/candidate.lean",
+          "source_sha256": "68570cf7ebb8004601f5375e120736fadf750cf388fde44232514da24cd6dd8e",
+          "status": "accepted",
+          "success": true,
+          "timed_out": false,
+          "verified": true
+        }
+      ],
+      "id": "bounded_copy"
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "axioms": {
+            "MiniVerify.Generated.candidate_correct": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "MiniVerify.Generated.candidate_vcs": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          "duration_seconds": 17.29589349986054,
+          "error": null,
+          "exit_code": 0,
+          "log_path": "benchmarks/runs/2026-11-10/two_phase/attempt-1/lean.log",
+          "required_theorems": [
+            "MiniVerify.Generated.candidate_vcs",
+            "MiniVerify.Generated.candidate_correct"
+          ],
+          "source_path": "benchmarks/runs/2026-11-10/two_phase/attempt-1/candidate.lean",
+          "source_sha256": "3ba632c1afe960c400aa6608312def099a347bbe1f3eacff249a3af794bc8d98",
+          "status": "accepted",
+          "success": true,
+          "timed_out": false,
+          "verified": true
+        }
+      ],
+      "id": "two_phase"
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "axioms": {
+            "MiniVerify.Generated.candidate_correct": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "MiniVerify.Generated.candidate_vcs": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          "duration_seconds": 8.52383775007911,
+          "error": null,
+          "exit_code": 0,
+          "log_path": "benchmarks/runs/2026-11-10/multiply/attempt-1/lean.log",
+          "required_theorems": [
+            "MiniVerify.Generated.candidate_vcs",
+            "MiniVerify.Generated.candidate_correct"
+          ],
+          "source_path": "benchmarks/runs/2026-11-10/multiply/attempt-1/candidate.lean",
+          "source_sha256": "52224c9376e4edcabfcd7c38bdaf03415d3803b686abdbe4186a1213247a8ded",
+          "status": "accepted",
+          "success": true,
+          "timed_out": false,
+          "verified": true
+        }
+      ],
+      "id": "multiply"
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "axioms": {
+            "MiniVerify.Generated.candidate_correct": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "MiniVerify.Generated.candidate_vcs": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          "duration_seconds": 8.012341999914497,
+          "error": null,
+          "exit_code": 0,
+          "log_path": "benchmarks/runs/2026-11-10/triangular/attempt-1/lean.log",
+          "required_theorems": [
+            "MiniVerify.Generated.candidate_vcs",
+            "MiniVerify.Generated.candidate_correct"
+          ],
+          "source_path": "benchmarks/runs/2026-11-10/triangular/attempt-1/candidate.lean",
+          "source_sha256": "1cc07e987f84153879b5fef618ace44b694f2db6f014e9a29d7906ef224bd9ff",
+          "status": "accepted",
+          "success": true,
+          "timed_out": false,
+          "verified": true
+        }
+      ],
+      "id": "triangular"
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "axioms": {
+            "MiniVerify.Generated.candidate_correct": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "MiniVerify.Generated.candidate_vcs": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          "duration_seconds": 12.104905124986544,
+          "error": null,
+          "exit_code": 0,
+          "log_path": "benchmarks/runs/2026-11-10/square/attempt-1/lean.log",
+          "required_theorems": [
+            "MiniVerify.Generated.candidate_vcs",
+            "MiniVerify.Generated.candidate_correct"
+          ],
+          "source_path": "benchmarks/runs/2026-11-10/square/attempt-1/candidate.lean",
+          "source_sha256": "7be9e8551ca5a623ef2e9f3ee78a44171663c8ba0b8e0ee0961c38c7311f7c1b",
+          "status": "accepted",
+          "success": true,
+          "timed_out": false,
+          "verified": true
+        }
+      ],
+      "id": "square"
+    }
+  ],
+  "codex_version": "codex-cli 0.162.0-alpha.17.2",
+  "completed": true,
+  "finished_utc": "2026-11-11T00:48:45.889547+00:00",
+  "kind": "live_model",
+  "lean_timeout_seconds": 45.0,
+  "max_attempts": 2,
+  "method": "Fixed programs/specifications; model annotations only; fixed arithmetic tactics; all selected cases counted.",
+  "model": "gpt-6.1-sol",
+  "policy": "annotation-synthesis-v1",
+  "provider_timeout_seconds": 180.0,
+  "reasoning_effort": "medium",
+  "schema_version": 1,
+  "selected_case_ids": [
+    "count_up",
+    "count_down",
+    "transfer",
+    "double_count",
+    "stride_two",
+    "parity_down",
+    "synchronized",
+    "bounded_copy",
+    "two_phase",
+    "multiply",
+    "triangular",
+    "square"
+  ],
+  "source_sha256": {
+    "MiniVerify.lean": "5a9fe36c7516893f69e3e6f4de1fecc53eb1619e8a87a9352a73cb452e7f3fc6",
+    "MiniVerify/Audit.lean": "90798f9fa6311168f339d741e0f915c1741135055eced7fb1496d3044c9f1021",
+    "MiniVerify/Benchmarks.lean": "a8bf8be0962b81523dd9909596b5d0ce65a04d6e53e0021feccbfa73a7a84184",
+    "MiniVerify/Core.lean": "90813b64e0f7507aa2e69a7c29a3d9fa75a84e1805823dfc7198273d641e1995",
+    "MiniVerify/Examples/BinarySearch.lean": "d832ee977c4a59113d80e6deaefe1c089e2763f6cef28fe5f1fbe9ce586da5e3",
+    "MiniVerify/Examples/InsertionSort.lean": "0b1a430ddbf6b392f9dedb50d5676ee20ddc41f3b6a1ba107f555f04b1678f51",
+    "MiniVerify/Examples/Reverse.lean": "20b3793dd7a3167223a58712f4473c7bd1a0ac7c5a4c5102544abe53e024d837",
+    "MiniVerify/Interpreter.lean": "7d06b362091989a5a4d15de66279f510cedf09e65bc4d61e8ad054b01286bbbf",
+    "MiniVerify/Language.lean": "9584c9d8fb0a7210efa986fa89f0a9591a17a7f7c6c0a7499a380f96346ac632",
+    "MiniVerify/Tests.lean": "1d4d75df8567850a169085c95fea2b3982e98f74a72de4272df4fd41de7f6d77",
+    "benchmarks/cases.json": "7ebb8b4eabc7d44b72b41f04615911d623ba1e959fbaf51e5c587e50d252c04c",
+    "benchmarks/reference.json": "b585455aa20b05110389ef03a9115a03ed34681a15455c63067f3e49e0ab84f7",
+    "lake-manifest.json": "5d2b56e7081e71be44068fa4c1d7dfe379bc16770c867f1df8fb623f69768f60",
+    "lakefile.lean": "e694612b2ad3a1ec1dc4428ca3e89bd3cc2246f2d0428e205c32e7fe56d61df4",
+    "lean-toolchain": "6faf6530819a0bc6d6092a2d9b974ea8e8adfec955d0e51e02e1f82734264d14",
+    "scripts/llm_benchmark.py": "0f177bf04ce439425ef15b3bf3611d8a0732119dae42df2ec3af1ce91e7734f2",
+    "scripts/llm_check.py": "690f611e9b8adf98b5e76e4fb78fbfabf63a4c80d7d67d8b36fba90ceef2de0a",
+    "scripts/llm_provider.py": "ec3fd605fb3483c612b1afe17487e9a939fb2b559c893c6b4be9481700983fb3"
+  },
+  "started_utc": "2026-11-11T00:45:06.977336+00:00",
+  "summary": {
+    "attempts": 12,
+    "model_claim_eligible": true,
+    "programs": 12,
+    "success_rate": 1.0,
+    "verified_first_attempt": 12,
+    "verified_within_budget": 12
+  }
+}

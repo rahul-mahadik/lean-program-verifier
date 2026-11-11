@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a1c813-1a59-7a52-a49e-58c11c99be03"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"invariant\":\"s.x + s.y + s.z == n + m\",\"variant\":\"s.x + s.y\",\"solver\":\"omega\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":9918,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":39,"reasoning_output_tokens":0}}

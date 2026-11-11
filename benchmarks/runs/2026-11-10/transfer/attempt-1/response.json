@@ -1,0 +1,1 @@
+{"invariant":"s.x + s.y == n + m","variant":"s.y","solver":"omega"}

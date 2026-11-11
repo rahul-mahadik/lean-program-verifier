@@ -1,0 +1,42 @@
+Propose a loop invariant and a strictly decreasing natural-number termination
+variant for the fixed program below. Return exactly the JSON object requested by the schema.
+Do not use tools, browse, inspect files, or modify the program/precondition/postcondition.
+You only know the supplied program. The checker proves universal VCs in Lean 4.
+
+Expression syntax is a restricted Python expression grammar, NOT Lean syntax:
+  immutable Nat inputs: n, m
+  Nat state fields: s.x, s.y, s.z, s.n, s.m, s.i
+  Nat operations: +, -, *, //, % (subtraction saturates at zero)
+  comparisons: ==, !=, <, <=, >, >=
+  predicates: and, or, not, True, False
+No functions, quantifiers, assignments, additional names, negative literals, or code.
+All fields initially unspecified in the supplied case are zero.
+Return {"invariant": "...", "variant": "...", "solver": "omega" or "nonlinear"}.
+The solver chooses a fixed trusted Lean arithmetic proof recipe; it is not executable code.
+Choose omega for linear natural-number arithmetic, nonlinear for polynomial relations.
+Your invariant must hold initially, be preserved, imply the postcondition on exit, and
+make the variant strictly decrease while the guard is true. Inputs may be arbitrarily large.
+
+FIXED CASE:
+{
+  "arithmetic": "All variables are natural numbers; subtraction truncates at zero. Statement updates within an iteration use the old state as shown in pseudocode.",
+  "description": "Transfer at most m units from a supply of n.",
+  "id": "bounded_copy",
+  "initial_state": "x = 0, y = n; n and m fields store the immutable inputs; all other fields are 0",
+  "lean_name": "MiniVerify.Benchmarks.boundedCopy",
+  "parameters": {
+    "m": "arbitrary natural number",
+    "n": "arbitrary natural number"
+  },
+  "postcondition": "x = min(n, m) and x + y = n",
+  "precondition": "True",
+  "pseudocode": "x := 0; y := n\nwhile x < m and y > 0:\n  x := x + 1\n  y := y - 1",
+  "state_fields": [
+    "x",
+    "y",
+    "z",
+    "n",
+    "m",
+    "i"
+  ]
+}

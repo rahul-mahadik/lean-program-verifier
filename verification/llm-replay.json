@@ -1,0 +1,236 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "id": "count_up",
+      "source_sha256": "3c248a43bb17bf34edf707227f6eb1c48eec5971caf3957ab50b8bc1fde1ae68",
+      "status": "accepted",
+      "verified": true
+    },
+    {
+      "attempt": 1,
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "count_down",
+      "source_sha256": "2e89f17093b4be8a423ef93bd4285c3b6ebc0bdcde8df752dd7c123252fa03c8",
+      "status": "accepted",
+      "verified": true
+    },
+    {
+      "attempt": 1,
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "transfer",
+      "source_sha256": "ca23e7626b88563a604f648fa25009b0c8b6b8281dcd54ae3027c0389011fe33",
+      "status": "accepted",
+      "verified": true
+    },
+    {
+      "attempt": 1,
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "double_count",
+      "source_sha256": "36eb1d2a79d7b4528b526ccfd84d0b8e621c322ead2db0c597775b1c2abba505",
+      "status": "accepted",
+      "verified": true
+    },
+    {
+      "attempt": 1,
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "stride_two",
+      "source_sha256": "f406519a17363e963f7b5cd3459064c0ea7824ad306c255bb09d8fe704d88ae3",
+      "status": "accepted",
+      "verified": true
+    },
+    {
+      "attempt": 1,
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "parity_down",
+      "source_sha256": "85486f52359054297eb4268bc28ddd6176b08ca0767f8783838fdaea95e3b05c",
+      "status": "accepted",
+      "verified": true
+    },
+    {
+      "attempt": 1,
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "synchronized",
+      "source_sha256": "7129c2b68f7bc95093cf2201d31a4dae9026a7926076695294673b84a31c6eb3",
+      "status": "accepted",
+      "verified": true
+    },
+    {
+      "attempt": 1,
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "bounded_copy",
+      "source_sha256": "68570cf7ebb8004601f5375e120736fadf750cf388fde44232514da24cd6dd8e",
+      "status": "accepted",
+      "verified": true
+    },
+    {
+      "attempt": 1,
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "two_phase",
+      "source_sha256": "3ba632c1afe960c400aa6608312def099a347bbe1f3eacff249a3af794bc8d98",
+      "status": "accepted",
+      "verified": true
+    },
+    {
+      "attempt": 1,
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "multiply",
+      "source_sha256": "52224c9376e4edcabfcd7c38bdaf03415d3803b686abdbe4186a1213247a8ded",
+      "status": "accepted",
+      "verified": true
+    },
+    {
+      "attempt": 1,
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "triangular",
+      "source_sha256": "1cc07e987f84153879b5fef618ace44b694f2db6f014e9a29d7906ef224bd9ff",
+      "status": "accepted",
+      "verified": true
+    },
+    {
+      "attempt": 1,
+      "axioms": {
+        "MiniVerify.Generated.candidate_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MiniVerify.Generated.candidate_vcs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "id": "square",
+      "source_sha256": "7be9e8551ca5a623ef2e9f3ee78a44171663c8ba0b8e0ee0961c38c7311f7c1b",
+      "status": "accepted",
+      "verified": true
+    }
+  ],
+  "checked_utc": "2026-11-11T00:50:22.478205+00:00",
+  "kind": "saved_annotation_replay",
+  "matched": true,
+  "model_calls": 0,
+  "source_run": "benchmarks/runs/2026-11-10/report.json"
+}

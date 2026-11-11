@@ -1,0 +1,1 @@
+{"invariant":"s.x < n + 2 and s.n == n","variant":"n - s.x","solver":"omega"}

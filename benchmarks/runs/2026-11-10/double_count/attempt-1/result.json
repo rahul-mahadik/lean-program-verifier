@@ -1,0 +1,29 @@
+{
+  "attempt": 1,
+  "axioms": {
+    "MiniVerify.Generated.candidate_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MiniVerify.Generated.candidate_vcs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "duration_seconds": 15.584110375028104,
+  "error": null,
+  "exit_code": 0,
+  "log_path": "benchmarks/runs/2026-11-10/double_count/attempt-1/lean.log",
+  "required_theorems": [
+    "MiniVerify.Generated.candidate_vcs",
+    "MiniVerify.Generated.candidate_correct"
+  ],
+  "source_path": "benchmarks/runs/2026-11-10/double_count/attempt-1/candidate.lean",
+  "source_sha256": "36eb1d2a79d7b4528b526ccfd84d0b8e621c322ead2db0c597775b1c2abba505",
+  "status": "accepted",
+  "success": true,
+  "timed_out": false,
+  "verified": true
+}

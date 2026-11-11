@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a1c811-68a6-7121-a9f7-1d0226774ac9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"invariant\":\"s.x + s.y == n + m\",\"variant\":\"s.y\",\"solver\":\"omega\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":9876,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":33,"reasoning_output_tokens":0}}

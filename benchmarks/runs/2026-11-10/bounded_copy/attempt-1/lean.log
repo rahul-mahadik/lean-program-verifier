@@ -1,0 +1,31 @@
+benchmarks/runs/2026-11-10/bounded_copy/attempt-1/candidate.lean:17:4: warning: 'all_goals (try split_ifs at *)' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+benchmarks/runs/2026-11-10/bounded_copy/attempt-1/candidate.lean:18:4: warning: 'all_goals
+  (try simp_all [candidateInvariant, candidateVariant, boundedCopy, Nat.add_mul, Nat.mul_add])' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+benchmarks/runs/2026-11-10/bounded_copy/attempt-1/candidate.lean:19:4: warning: 'all_goals (repeat' apply And.intro)' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+benchmarks/runs/2026-11-10/bounded_copy/attempt-1/candidate.lean:20:4: warning: 'all_goals omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+benchmarks/runs/2026-11-10/bounded_copy/attempt-1/candidate.lean:23:4: warning: 'all_goals (try split_ifs at *)' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+benchmarks/runs/2026-11-10/bounded_copy/attempt-1/candidate.lean:24:4: warning: 'all_goals
+  (try simp_all [candidateInvariant, candidateVariant, boundedCopy, Nat.add_mul, Nat.mul_add])' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+benchmarks/runs/2026-11-10/bounded_copy/attempt-1/candidate.lean:29:4: warning: 'all_goals (try split_ifs at *)' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+benchmarks/runs/2026-11-10/bounded_copy/attempt-1/candidate.lean:30:4: warning: 'all_goals
+  (try simp_all [candidateInvariant, candidateVariant, boundedCopy, Nat.add_mul, Nat.mul_add])' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+benchmarks/runs/2026-11-10/bounded_copy/attempt-1/candidate.lean:31:4: warning: 'all_goals (repeat' apply And.intro)' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+benchmarks/runs/2026-11-10/bounded_copy/attempt-1/candidate.lean:17:14: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+benchmarks/runs/2026-11-10/bounded_copy/attempt-1/candidate.lean:18:14: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+benchmarks/runs/2026-11-10/bounded_copy/attempt-1/candidate.lean:19:14: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+benchmarks/runs/2026-11-10/bounded_copy/attempt-1/candidate.lean:20:14: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+'MiniVerify.Generated.candidate_vcs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MiniVerify.Generated.candidate_correct' depends on axioms: [propext, Classical.choice, Quot.sound]

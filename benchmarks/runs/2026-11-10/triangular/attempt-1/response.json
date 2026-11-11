@@ -1,0 +1,1 @@
+{"invariant":"s.x <= n and 2 * s.y == s.x * (s.x + 1)","variant":"n - s.x","solver":"nonlinear"}

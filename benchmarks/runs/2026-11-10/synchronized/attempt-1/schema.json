@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "invariant": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "string"
+    },
+    "solver": {
+      "type": "string",
+      "enum": [
+        "omega",
+        "nonlinear"
+      ]
+    }
+  },
+  "required": [
+    "invariant",
+    "variant",
+    "solver"
+  ],
+  "additionalProperties": false
+}

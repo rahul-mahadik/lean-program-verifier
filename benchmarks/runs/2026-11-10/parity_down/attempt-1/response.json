@@ -1,0 +1,1 @@
+{"invariant":"s.x % 2 == n % 2","variant":"s.x","solver":"omega"}

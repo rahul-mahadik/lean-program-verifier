@@ -96,6 +96,10 @@ inputs. Prompts, responses, proof sources, failures, and axiom reports are
 saved for replay. See [BENCHMARKS.md](BENCHMARKS.md) for the protocol and
 commands. The manually verified array algorithms above are separate.
 
+Recorded run: `gpt-6.1-sol` verified 12/12 programs on the first attempt
+with medium reasoning effort. This is a small, self-authored arithmetic
+suite; [raw results](benchmarks/runs/2026-11-10/report.json) are included.
+
 ## Scope
 
 Integers are unbounded mathematical integers. Writes and swaps preserve
