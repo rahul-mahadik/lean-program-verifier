@@ -1,5 +1,6 @@
 import MiniVerify
 import MiniVerify.Tests
+import MiniVerify.Benchmarks
 
 #print axioms MiniVerify.vcgen_sound
 #print axioms MiniVerify.totalCorrect_of_vcs
@@ -17,6 +18,8 @@ import MiniVerify.Tests
 #print axioms MiniVerify.Examples.Reverse.executable_correct
 #print axioms MiniVerify.Examples.InsertionSort.vcs
 #print axioms MiniVerify.Examples.InsertionSort.executable_correct
+#print axioms MiniVerify.Benchmarks.Case.verify
+#print axioms MiniVerify.Benchmarks.Case.executable_correct
 
 #check @MiniVerify.vcgen_sound
 #check @MiniVerify.verified_execution

@@ -28,6 +28,8 @@ EXPECTED = {
     "MiniVerify.Examples.Reverse.executable_correct",
     "MiniVerify.Examples.InsertionSort.vcs",
     "MiniVerify.Examples.InsertionSort.executable_correct",
+    "MiniVerify.Benchmarks.Case.verify",
+    "MiniVerify.Benchmarks.Case.executable_correct",
 }
 
 

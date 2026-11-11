@@ -84,6 +84,18 @@ Exact positive and adversarial cases are in [Tests.lean](MiniVerify/Tests.lean).
 The audit permits only `propext`, `Classical.choice`, and `Quot.sound`.
 It rejects unfinished proofs and custom axioms in project Lean sources.
 
+## LLM annotation synthesis
+
+A benchmark runner asks an LLM for loop invariants and termination
+variants, checks them with Lean, and can return diagnostics for one repair
+attempt. Program bodies and specifications remain fixed. Responses are
+restricted expressions, with no model-written Lean or executable code.
+
+The suite has twelve arithmetic loop programs with arbitrary natural
+inputs. Prompts, responses, proof sources, failures, and axiom reports are
+saved for replay. See [BENCHMARKS.md](BENCHMARKS.md) for the protocol and
+commands. The manually verified array algorithms above are separate.
+
 ## Scope
 
 Integers are unbounded mathematical integers. Writes and swaps preserve

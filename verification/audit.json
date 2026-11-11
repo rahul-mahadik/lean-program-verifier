@@ -1,7 +1,7 @@
 {
   "passed": true,
   "lean_toolchain": "leanprover/lean4:v4.14.0",
-  "source_files_scanned": 11,
+  "source_files_scanned": 12,
   "exact_regressions": 25,
   "allowed_axioms": [
     "Classical.choice",
@@ -79,10 +79,17 @@
       "propext",
       "Classical.choice",
       "Quot.sound"
-    ]
+    ],
+    "MiniVerify.Benchmarks.Case.executable_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MiniVerify.Benchmarks.Case.verify": []
   },
   "source_sha256": {
-    "MiniVerify/Audit.lean": "8756d3bb160620e78d44a5d409dab4adb6e46e1039110ddd5cc56b6ef92e8d40",
+    "MiniVerify/Audit.lean": "90798f9fa6311168f339d741e0f915c1741135055eced7fb1496d3044c9f1021",
+    "MiniVerify/Benchmarks.lean": "a8bf8be0962b81523dd9909596b5d0ce65a04d6e53e0021feccbfa73a7a84184",
     "MiniVerify/Core.lean": "90813b64e0f7507aa2e69a7c29a3d9fa75a84e1805823dfc7198273d641e1995",
     "MiniVerify/Examples/BinarySearch.lean": "d832ee977c4a59113d80e6deaefe1c089e2763f6cef28fe5f1fbe9ce586da5e3",
     "MiniVerify/Examples/InsertionSort.lean": "0b1a430ddbf6b392f9dedb50d5676ee20ddc41f3b6a1ba107f555f04b1678f51",

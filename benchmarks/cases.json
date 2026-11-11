@@ -1,0 +1,266 @@
+[
+  {
+    "id": "count_up",
+    "lean_name": "MiniVerify.Benchmarks.countUp",
+    "description": "Count from zero to n.",
+    "pseudocode": "x := 0\nwhile x < n:\n  x := x + 1",
+    "precondition": "True",
+    "initial_state": "x = 0; n and m fields store the immutable inputs; all other fields are 0",
+    "postcondition": "x = n",
+    "state_fields": [
+      "x",
+      "y",
+      "z",
+      "n",
+      "m",
+      "i"
+    ],
+    "parameters": {
+      "n": "arbitrary natural number",
+      "m": "arbitrary natural number"
+    },
+    "arithmetic": "All variables are natural numbers; subtraction truncates at zero. Statement updates within an iteration use the old state as shown in pseudocode."
+  },
+  {
+    "id": "count_down",
+    "lean_name": "MiniVerify.Benchmarks.countDown",
+    "description": "Decrement a natural counter to zero.",
+    "pseudocode": "x := n\nwhile x > 0:\n  x := x - 1",
+    "precondition": "True",
+    "initial_state": "x = n; n and m fields store the immutable inputs; all other fields are 0",
+    "postcondition": "x = 0",
+    "state_fields": [
+      "x",
+      "y",
+      "z",
+      "n",
+      "m",
+      "i"
+    ],
+    "parameters": {
+      "n": "arbitrary natural number",
+      "m": "arbitrary natural number"
+    },
+    "arithmetic": "All variables are natural numbers; subtraction truncates at zero. Statement updates within an iteration use the old state as shown in pseudocode."
+  },
+  {
+    "id": "transfer",
+    "lean_name": "MiniVerify.Benchmarks.transfer",
+    "description": "Move all units from y into x.",
+    "pseudocode": "x := n; y := m\nwhile y > 0:\n  x := x + 1\n  y := y - 1",
+    "precondition": "True",
+    "initial_state": "x = n, y = m; n and m fields store the immutable inputs; all other fields are 0",
+    "postcondition": "x = n + m and y = 0",
+    "state_fields": [
+      "x",
+      "y",
+      "z",
+      "n",
+      "m",
+      "i"
+    ],
+    "parameters": {
+      "n": "arbitrary natural number",
+      "m": "arbitrary natural number"
+    },
+    "arithmetic": "All variables are natural numbers; subtraction truncates at zero. Statement updates within an iteration use the old state as shown in pseudocode."
+  },
+  {
+    "id": "double_count",
+    "lean_name": "MiniVerify.Benchmarks.doubleCount",
+    "description": "Accumulate twice the number of iterations.",
+    "pseudocode": "x := 0; y := 0\nwhile x < n:\n  x := x + 1\n  y := y + 2",
+    "precondition": "True",
+    "initial_state": "x = 0, y = 0; n and m fields store the immutable inputs; all other fields are 0",
+    "postcondition": "x = n and y = 2 * n",
+    "state_fields": [
+      "x",
+      "y",
+      "z",
+      "n",
+      "m",
+      "i"
+    ],
+    "parameters": {
+      "n": "arbitrary natural number",
+      "m": "arbitrary natural number"
+    },
+    "arithmetic": "All variables are natural numbers; subtraction truncates at zero. Statement updates within an iteration use the old state as shown in pseudocode."
+  },
+  {
+    "id": "stride_two",
+    "lean_name": "MiniVerify.Benchmarks.strideTwo",
+    "description": "Reach or pass a bound using increments of two.",
+    "pseudocode": "x := 0\nwhile x < n:\n  x := x + 2",
+    "precondition": "True",
+    "initial_state": "x = 0; n and m fields store the immutable inputs; all other fields are 0",
+    "postcondition": "n <= x and x < n + 2",
+    "state_fields": [
+      "x",
+      "y",
+      "z",
+      "n",
+      "m",
+      "i"
+    ],
+    "parameters": {
+      "n": "arbitrary natural number",
+      "m": "arbitrary natural number"
+    },
+    "arithmetic": "All variables are natural numbers; subtraction truncates at zero. Statement updates within an iteration use the old state as shown in pseudocode."
+  },
+  {
+    "id": "parity_down",
+    "lean_name": "MiniVerify.Benchmarks.parityDown",
+    "description": "Reduce a counter to its parity bit.",
+    "pseudocode": "x := n\nwhile x > 1:\n  x := x - 2",
+    "precondition": "True",
+    "initial_state": "x = n; n and m fields store the immutable inputs; all other fields are 0",
+    "postcondition": "x <= 1 and x % 2 = n % 2",
+    "state_fields": [
+      "x",
+      "y",
+      "z",
+      "n",
+      "m",
+      "i"
+    ],
+    "parameters": {
+      "n": "arbitrary natural number",
+      "m": "arbitrary natural number"
+    },
+    "arithmetic": "All variables are natural numbers; subtraction truncates at zero. Statement updates within an iteration use the old state as shown in pseudocode."
+  },
+  {
+    "id": "synchronized",
+    "lean_name": "MiniVerify.Benchmarks.synchronized",
+    "description": "Cancel one unit from both counters until one is empty.",
+    "pseudocode": "x := n; y := m\nwhile x > 0 and y > 0:\n  x := x - 1\n  y := y - 1",
+    "precondition": "True",
+    "initial_state": "x = n, y = m; n and m fields store the immutable inputs; all other fields are 0",
+    "postcondition": "x = n - m and y = m - n",
+    "state_fields": [
+      "x",
+      "y",
+      "z",
+      "n",
+      "m",
+      "i"
+    ],
+    "parameters": {
+      "n": "arbitrary natural number",
+      "m": "arbitrary natural number"
+    },
+    "arithmetic": "All variables are natural numbers; subtraction truncates at zero. Statement updates within an iteration use the old state as shown in pseudocode."
+  },
+  {
+    "id": "bounded_copy",
+    "lean_name": "MiniVerify.Benchmarks.boundedCopy",
+    "description": "Transfer at most m units from a supply of n.",
+    "pseudocode": "x := 0; y := n\nwhile x < m and y > 0:\n  x := x + 1\n  y := y - 1",
+    "precondition": "True",
+    "initial_state": "x = 0, y = n; n and m fields store the immutable inputs; all other fields are 0",
+    "postcondition": "x = min(n, m) and x + y = n",
+    "state_fields": [
+      "x",
+      "y",
+      "z",
+      "n",
+      "m",
+      "i"
+    ],
+    "parameters": {
+      "n": "arbitrary natural number",
+      "m": "arbitrary natural number"
+    },
+    "arithmetic": "All variables are natural numbers; subtraction truncates at zero. Statement updates within an iteration use the old state as shown in pseudocode."
+  },
+  {
+    "id": "two_phase",
+    "lean_name": "MiniVerify.Benchmarks.twoPhase",
+    "description": "Drain two supplies into a shared accumulator.",
+    "pseudocode": "x := n; y := m; z := 0\nwhile x > 0 or y > 0:\n  if x > 0:\n    x := x - 1\n  else:\n    y := y - 1\n  z := z + 1",
+    "precondition": "True",
+    "initial_state": "x = n, y = m, z = 0; n and m fields store the immutable inputs; all other fields are 0",
+    "postcondition": "x = 0 and y = 0 and z = n + m",
+    "state_fields": [
+      "x",
+      "y",
+      "z",
+      "n",
+      "m",
+      "i"
+    ],
+    "parameters": {
+      "n": "arbitrary natural number",
+      "m": "arbitrary natural number"
+    },
+    "arithmetic": "All variables are natural numbers; subtraction truncates at zero. Statement updates within an iteration use the old state as shown in pseudocode."
+  },
+  {
+    "id": "multiply",
+    "lean_name": "MiniVerify.Benchmarks.multiply",
+    "description": "Compute multiplication by repeated addition.",
+    "pseudocode": "x := 0; y := 0\nwhile x < n:\n  x := x + 1\n  y := y + m",
+    "precondition": "True",
+    "initial_state": "x = 0, y = 0; n and m fields store the immutable inputs; all other fields are 0",
+    "postcondition": "x = n and y = n * m",
+    "state_fields": [
+      "x",
+      "y",
+      "z",
+      "n",
+      "m",
+      "i"
+    ],
+    "parameters": {
+      "n": "arbitrary natural number",
+      "m": "arbitrary natural number"
+    },
+    "arithmetic": "All variables are natural numbers; subtraction truncates at zero. Statement updates within an iteration use the old state as shown in pseudocode."
+  },
+  {
+    "id": "triangular",
+    "lean_name": "MiniVerify.Benchmarks.triangular",
+    "description": "Sum the integers from one through n.",
+    "pseudocode": "x := 0; y := 0\nwhile x < n:\n  y := y + x + 1\n  x := x + 1",
+    "precondition": "True",
+    "initial_state": "x = 0, y = 0; n and m fields store the immutable inputs; all other fields are 0",
+    "postcondition": "x = n and 2 * y = n * (n + 1)",
+    "state_fields": [
+      "x",
+      "y",
+      "z",
+      "n",
+      "m",
+      "i"
+    ],
+    "parameters": {
+      "n": "arbitrary natural number",
+      "m": "arbitrary natural number"
+    },
+    "arithmetic": "All variables are natural numbers; subtraction truncates at zero. Statement updates within an iteration use the old state as shown in pseudocode."
+  },
+  {
+    "id": "square",
+    "lean_name": "MiniVerify.Benchmarks.square",
+    "description": "Compute n squared by adding successive odd numbers.",
+    "pseudocode": "x := 0; y := 0\nwhile x < n:\n  y := y + 2 * x + 1\n  x := x + 1",
+    "precondition": "True",
+    "initial_state": "x = 0, y = 0; n and m fields store the immutable inputs; all other fields are 0",
+    "postcondition": "x = n and y = n * n",
+    "state_fields": [
+      "x",
+      "y",
+      "z",
+      "n",
+      "m",
+      "i"
+    ],
+    "parameters": {
+      "n": "arbitrary natural number",
+      "m": "arbitrary natural number"
+    },
+    "arithmetic": "All variables are natural numbers; subtraction truncates at zero. Statement updates within an iteration use the old state as shown in pseudocode."
+  }
+]

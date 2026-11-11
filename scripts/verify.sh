@@ -15,8 +15,9 @@ if ! command -v lake >/dev/null 2>&1; then
 fi
 
 mkdir -p verification
-lake build MiniVerify miniverify MiniVerify.Tests 2>&1 | tee verification/build.log
+lake build MiniVerify miniverify MiniVerify.Tests MiniVerify.Benchmarks 2>&1 | tee verification/build.log
 lake env lean MiniVerify/Audit.lean 2>&1 | tee verification/axioms.txt
 .lake/build/bin/miniverify demo | tee verification/demo.txt
 python3 scripts/smoke.py
 python3 scripts/audit.py
+python3 -m unittest discover -s tests

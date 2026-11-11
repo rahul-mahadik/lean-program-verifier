@@ -14,6 +14,8 @@
 'MiniVerify.Examples.Reverse.executable_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MiniVerify.Examples.InsertionSort.vcs' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MiniVerify.Examples.InsertionSort.executable_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MiniVerify.Benchmarks.Case.verify' does not depend on any axioms
+'MiniVerify.Benchmarks.Case.executable_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
 @MiniVerify.vcgen_sound : ∀ {σ : Type u_1} (c : MiniVerify.Cmd σ) (post : MiniVerify.Assertion σ) (s : σ),
   MiniVerify.vcgen c post s → ∃ t, MiniVerify.Exec c s t ∧ post t
 @MiniVerify.verified_execution : ∀ {σ : Type u_1} (c : MiniVerify.Cmd σ) (post : MiniVerify.Assertion σ) (s : σ),
